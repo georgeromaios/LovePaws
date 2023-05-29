@@ -8,8 +8,8 @@ const Home = () => {
     }
 
   return (
-    <>
-    <Nav/>
+    <div className='overlay'>
+    <Nav minimal={false} authToken={authToken}/>
     <div className="home">
       <h1>Welcome to the Pet Matching App</h1>
       <p>Swipe left or right to find walking partners for your pets!</p>
@@ -17,7 +17,7 @@ const Home = () => {
         {authToken ? 'Signout':'Create Account' }
       </button>
     </div>
-    </>
+    </div>
   );
 };
 
