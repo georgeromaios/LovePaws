@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Onboarding = ()=>{
-    return(
+const Onboarding = () => {
+    return (
         <div>
-                on boarding
+            on boarding
         </div>
     )
 }

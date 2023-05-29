@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="overlay">
-      <Nav minimal={false} authToken={authToken} />
+      <Nav minimal={false} authToken={authToken} setShowModal={setShowModal} />
       <div className="home">
         <h1>Welcome to the Pet Matching App</h1>
         <p>Swipe left or right to find walking partners for your pets!</p>

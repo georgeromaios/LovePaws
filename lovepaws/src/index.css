@@ -75,7 +75,7 @@ nav .nav-button {
     height: 50px;
 }
 
-nav .nav-button:disabled {
+nav .nav-button.dark {
     background-color: rgb(181, 180, 180);
     color: rgb(189, 42, 90);
 }
@@ -322,3 +322,7 @@ nav .logo-container .logo {
     display: flex;
     flex-direction: column;
 } 
+
+
+/* ===============Close Button in authModal====================== */
+
