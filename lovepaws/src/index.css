@@ -1,0 +1,25 @@
+  @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;700&display=swap');
+
+
+
+html{
+    margin:0;
+    padding:0;
+}
+
+*{
+    font-family: 'Readex Pro',sans-serif;
+}
+
+.primary-button{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15;
+    background: linear-gradient(135deg, #e44334, #ff8560);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+}
+.primary-button:hover  {
+    background: linear-gradient(135deg, #ff8560,  #e44334);
+}
