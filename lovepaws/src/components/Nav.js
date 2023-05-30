@@ -1,39 +1,31 @@
-import React, { useState } from 'react';
-import colorlogo from '../images/logo.png';
-import whitelogo from '../images/whiteLogo.png';
+import whiteLogo from "../images/whiteLogo.png";
+import colorLogo from "../images/logo.png";
 
-const Nav = ({ minimal, authToken }) => {
-  const [showModal, setShowModal] = useState(false);
-
+const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
   const handleClick = () => {
     setShowModal(true);
+    setIsSignUp(false);
   };
 
   return (
     <nav>
       <div className="logo-container">
-        <img className="logo" src={minimal ? colorlogo : whitelogo} alt="Logo" />
+        <img
+          className="logo"
+          src={minimal ? colorLogo : whiteLogo}
+          alt="logo"
+        />
       </div>
-
-      {!authToken && (
+      {!authToken && !minimal && (
         <button
-          className={`nav-button ${showModal ? 'dark' : ''}`}
+          className="nav-button"
           onClick={handleClick}
+          disabled={showModal}
         >
           Log in
         </button>
       )}
-
-      {showModal && (
-        <div className="auth-modal">
-          <div onClick={() => setShowModal(false)}>
-            <span>&#10005;</span>
-          </div>
-          Auth MODAL
-        </div>
-      )}
     </nav>
   );
 };
-
 export default Nav;

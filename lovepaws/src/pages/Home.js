@@ -4,24 +4,29 @@ import AuthModal from '../components/AuthModal';
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
+  const[isSignUp,setIsSignUp] = useState(true)
+
   const authToken = false;
 
   const handleClick = () => {
     console.log('Clicked');
     setShowModal(true);
+    setIsSignUp(true)
   };
 
   return (
     <div className="overlay">
-      <Nav minimal={false} authToken={authToken} setShowModal={setShowModal} />
+      <Nav minimal={false} authToken={authToken} setShowModal={setShowModal} isSignUp={setIsSignUp} />
       <div className="home">
         <h1>Welcome to the Pet Matching App</h1>
         <p>Swipe left or right to find walking partners for your pets!</p>
+
+
         <button className="primary-button" onClick={handleClick}>
           {authToken ? 'Sign Out' : 'Create Account'}
         </button>
 
-        {showModal && <AuthModal setShowModal={setShowModal} />}
+        {showModal && <AuthModal setShowModal={setShowModal} setIsSignUp={setIsSignUp} isSignUp={isSignUp} />}
       </div>
     </div>
   );

@@ -120,9 +120,9 @@ nav .logo-container .logo {
     border-radius: 10px;
     padding: 40px;
 }
-/* }
 
-/* .auth-modal .close-icon {
+
+ .auth-modal .close-icon {
     float: right;
 }
 
@@ -137,7 +137,7 @@ nav .logo-container .logo {
     margin: 8px;
     font-size: 17px;
 }
-
+/*
 /*-------- OnBoarding Page --------*/
 /* .onboarding {
     border-top: solid 1px rgb(213, 213, 213);
