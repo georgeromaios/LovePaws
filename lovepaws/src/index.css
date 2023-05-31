@@ -171,9 +171,9 @@ nav .logo-container .logo {
     margin: 8px;
     font-size: 17px;
 }
-/*
+
 /*-------- OnBoarding Page --------*/
-/* .onboarding {
+.onboarding {
     border-top: solid 1px rgb(213, 213, 213);
 }
 
@@ -247,7 +247,7 @@ nav .logo-container .logo {
 
 .onboarding form .photo-container img {
     width: 100%
-} */
+}
 
 /*-------- Dashboard  --------*/
 /* .dashboard {
