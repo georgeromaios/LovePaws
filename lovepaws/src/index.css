@@ -33,6 +33,14 @@ h2 {
     border: none;
 }
 
+.gif-image {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-left: 10px; /* Adjust the margin as needed */
+    vertical-align: middle;
+  }
+  
+
 .primary-button:hover {
     background: linear-gradient(260deg, rgba(228, 67, 52, 1), rgba(255, 133, 96, 1));
 }

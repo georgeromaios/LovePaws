@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Nav from '../components/Nav';
 import AuthModal from '../components/AuthModal';
+import celebrateGif from "../images/celebrate.gif";
+
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -27,6 +29,8 @@ const Home = () => {
 
         <button className="primary-button" onClick={handleClick}>
           {authToken ? 'Sign Out' : 'Create Account'}
+          <img src={celebrateGif} alt="Celebration GIF" className="gif-image" />
+
         </button>
 
         {showModal && <AuthModal setShowModal={setShowModal} setIsSignUp={setIsSignUp} isSignUp={isSignUp} />}
