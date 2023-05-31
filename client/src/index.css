@@ -250,7 +250,7 @@ nav .logo-container .logo {
 }
 
 /*-------- Dashboard  --------*/
-/* .dashboard {
+.dashboard {
     display: flex;
     justify-content: space-between;
 }
@@ -292,7 +292,7 @@ nav .logo-container .logo {
 }
 
 /*-------- Chat Container --------*/
-/* .chat-container {
+ .chat-container {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -301,7 +301,7 @@ nav .logo-container .logo {
     z-index: 1;
 } */
 
-/* .chat-container .chat-container-header {
+ .chat-container .chat-container-header {
     background: linear-gradient(45deg, rgb(228, 67, 52, 1), rgb(255, 133, 96, 1));
     height: 100px;
     display: flex;
@@ -340,10 +340,10 @@ nav .logo-container .logo {
 
 .img-container img {
     width: 100%;
-} */ */
+}
 
 /*-------- Chat Display --------*/
-/* .chat-display,
+ .chat-display,
 .matches-display {
     padding: 20px;
     height: 60vh;
