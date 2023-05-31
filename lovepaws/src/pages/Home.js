@@ -16,10 +16,13 @@ const Home = () => {
 
   return (
     <div className="overlay">
-      <Nav minimal={false} authToken={authToken} setShowModal={setShowModal} isSignUp={setIsSignUp} />
+      <Nav minimal={false} authToken={authToken} setShowModal={setShowModal} setIsSignUp={setIsSignUp} />
+
       <div className="home">
-        <h1>Welcome to the Pet Matching App</h1>
-        <p>Swipe left or right to find walking partners for your pets!</p>
+        <h1 className='welcome-text' >Welcome to the Pet Matching App</h1>
+        <p className='mid-text'>Swipe left or right to find walking partners for your pets!</p>
+
+        {/* <h1 className= 'primary-title'>Swipe Right</h1> */}
 
 
         <button className="primary-button" onClick={handleClick}>

@@ -1,4 +1,4 @@
-import whiteLogo from "../images/whiteLogo.png";
+import whiteLogo from "../images/white-logo.png";
 import colorLogo from "../images/logo.png";
 
 const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
