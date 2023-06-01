@@ -1,11 +1,13 @@
-const PORT = 8000
-const express = require('express')
-const {MongoClient} = require('mongodb')
-const {v4: uuidv4} = require('uuid')
-const jwt = require('jsonwebtoken')
-const cors = require('cors')
-const bcrypt = require('bcrypt')
-require('dotenv').config()
+const PORT = 8000;
+const express = require('express');
+const { MongoClient } = require('mongodb');
+const { v4: uuidv4 } = require('uuid');
+const jwt = require('jsonwebtoken');
+const cors = require('cors');
+const bcrypt = require('bcrypt');
+const http = require('http');
+const socketIO = require('socket.io');
+require('dotenv').config();
 
 const uri = "mongodb+srv://igeorgerome:xalkidoS27@cluster0.lf8cppf.mongodb.net/?retryWrites=true&w=majority";
 
